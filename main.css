@@ -186,8 +186,8 @@ nav a {
   margin: 20px;
 }
 img {
-  height: 400px;
-  weight: 200px;
+  height: 370px;
+  weight: 180px;
 }
 .div2-ptojets {
 }
@@ -205,17 +205,20 @@ img {
   padding-top: 100px;
 }
 #p-apropos{
+  text-align: center;
   padding: 20px;
 }
 .button {
-  text-align: center;
   border: none;
   font-size: 1.1rem;
   padding: 10px;
   background-color: #336696;
   margin: 20px;
+  cursor: pointer;
+  width: auto;
 }
 .button a {
+  text-align: center;
   color: white;
 }
 /* -----------contact-------*/
@@ -226,6 +229,7 @@ img {
   color:white;
 }
 #h1-contact{
+ 
   font-size: 2em;
   text-align: center;
   padding-top: 100px;
@@ -234,7 +238,7 @@ img {
 #p-contact{
   text-align: center;
   font-size: 1.2rem;
-
+  padding: 20px;
 }
 form {
   display: flex;
@@ -280,33 +284,29 @@ textarea {
 }
 /***** MEDIA QUERIES *****/
 @media screen and (max-width: 1140px) {
-  #section1 {
-    disolay:flex;
-    flex-direction: column;
-  }
+  
+ 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1040px) {
   #logo {
     font-size: 1em;
   }
-
+  img {
+    height: 200px;
+    weight: 100px;
+  }
   .navLinks {
     width: 60%;
   }
 }
-
-@media screen and (max-width: 825px) {
-  .projets {
-    padding: 2em;
+@media screen and (max-width:848px) {
+  #section1 {
+    disolay:flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
   }
-}
-
-@media screen and (max-width: 800px) {
-  body {
-    overflow-x: hidden;
-  }
-
   .navLinks {
     position: absolute;
     right: 0px;
@@ -344,36 +344,25 @@ textarea {
     position:relative;
     z-index: 20;;
     }
-    .ouvrir{
+  .ouvrir{
       display: block;
       color:white
     }
-    .fermer{
+  .fermer{
       display:none;
       color:white
     }
-    .open .ouvrir {
+  .open .ouvrir {
       display: none;
   
     }
-    .open .fermer{
+  .open .fermer{
       display: block;
     }
-    .open .navLinks{
+  .open .navLinks{
       transform:translateX(0);
     }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #section1 {
-    height: 100vh;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  
-
+ 
   #h2-apropos {
     font-size: 2em;
     margin-top:20px;
@@ -387,13 +376,11 @@ textarea {
     height: 200px;
     weight: 100px;
   }
-  #section1 {
-    padding: 20px;
+ 
+  #h2-apropos {
+    margin-top:4px;
   }
-  .img1 {
-    padding: 0px;
-    margin: 0px;
-  }
+  
 
   input,
   textarea {
@@ -411,7 +398,14 @@ textarea {
 
 @media screen and (max-width: 400px) {
   img {
-    width: 275px;
+    height: 200px;
+    weight: 100px;
+  }
+  #section1 {
+    align-items: center;
+  }
+  #h2-apropos {
+    margin-top:4px;
   }
 
   .contactIcon {
