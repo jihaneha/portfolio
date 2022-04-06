@@ -300,7 +300,10 @@ textarea {
     width: 60%;
   }
 }
-@media screen and (max-width:848px) {
+@media screen and (max-width:800px) {
+  #h1-projets {
+    padding-top: 20px;
+  }
   #section1 {
     disolay:flex;
     flex-direction: column;
@@ -395,17 +398,29 @@ textarea {
     font-size: 1.5rem;
   }
 }
-
 @media screen and (max-width: 400px) {
   img {
-    height: 200px;
+    height: 150px;
     weight: 100px;
   }
   #section1 {
     align-items: center;
   }
+  #h1-projets {
+    font-size: 1.5em;
+    
+  }
+
   #h2-apropos {
     margin-top:4px;
+    font-size: 1.5em;
+  }
+  #h1 {
+    font-size: 1.5em;
+  }
+  #p1 {
+    font-size: 1em;
+
   }
 
   .contactIcon {
@@ -413,16 +428,27 @@ textarea {
     height: 50px;
     width: 50px;
   }
-
-  button {
-    font-size: 0.9em;
+  #h1-contact{
+    font-size: 1.5em;  
   }
+  #p-contact{
+    font-size: 1rem;  
+  }
+  
+label {
+  font-size: 1.3rem;
 }
 
-@media screen and (max-height: 700px) {
-  .section1 {
-    height: 100vh;
+input {  
+  font-size: 1rem; 
+}
+textarea {  
+  font-size: 1rem;
+}
+  button {
+    font-size: 0.5em;
   }
+
 }
 
 
