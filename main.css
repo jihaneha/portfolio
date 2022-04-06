@@ -312,7 +312,7 @@ textarea {
     align-items: center;
   }
   .navLinks {
-    background: black;
+    background: #202024;
     position: absolute;
     top: 0;
     left: 0;
@@ -325,7 +325,7 @@ textarea {
     transition: transform 1s ;
   }
   .navLinks li a {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .burger {
