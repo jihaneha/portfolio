@@ -1,6 +1,6 @@
 let burger = document.querySelector(".burger");
-let body = decument.querySelector("body");
+let body = document.querySelector("body");
 
 burger.addEventListener("click", function () {
-  body.classList.burger("open");
+  body.classList.toggle("open");
 });
