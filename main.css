@@ -166,21 +166,47 @@ nav a {
   height: 100vh;
   color: white;
 }
+.cards{
+  background-color: white;
+  width: 270px;
+  height:400px;
+  margin:10px;
+  border-radius:15px ;
+  overflow: hidden;
+  color:black;
+  text-align: center;
+}
 #h1-projets {
   font-size: 2em;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 20px;
 }
 #p-projets {
   padding: 10px;
   text-align: center;
 }
-#section1 {
-  padding: 40px;
+#section1 {  
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  height:100vh;
 }
-.img1 {
+.card-image{
+  
+  height:300px;
+  margin-bottom:15px ;
+  border-radius: 15px 15px 0 0;
+  /* background-size: cover; */
+}
+.card1{
+  background-image: url("images/images.png");
+}
+.card2{
+  background-image: url("images/screencapture-localhost-jihanReprise-2022-05-19-12_08_18 (1) (1).png");
+}
+.card3{
+  background-image: url("images/screencapture-file-C-Users-ghami-OneDrive-Bureau-formulaire-ecf-index-html-2022-05-19-12_34_06 (1).png");
+}
+/* .img1 {
   margin: auto;
   border: 3px solid #336696;
   padding: 20px;
@@ -189,36 +215,46 @@ nav a {
 img {
   height: 370px;
   weight: 180px;
-}
-.div2-ptojets {
-}
-.div3-ptojets {
-}
-.div4-ptojets {
-}
-.div5-ptojets {
-}
-.div6-ptojets {
-}
+} */
+
 /*--------apropos--------*/
 #section2{
   text-align: center;
+  height: 100vh;;
 }
 #h2-apropos {
   font-size: 2em;
   text-align: center;
   padding-top: 100px;
+  padding-bottom: 40px;
+}
+.divp{
+  display: flex;
+  justify-content: space-around;
+  margin:20px;
+}
+.imgp{
+  height: 300px;
+  width: 600px;
+  margin:20px
+  
+
+}
+.pp{
+  margin-top:40px;
+  
+  text-align: left;
 }
 #p-apropos{
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 .button {
   border: none;
   font-size: 1.1rem;
   padding: 10px;
   background-color: #336696;
-  margin: 20px;
+  margin: 10px;
   cursor: pointer;
   width: auto;
 }
@@ -237,7 +273,7 @@ img {
  
   font-size: 2em;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 200px;
   margin-bottom: 75px;
 }
 #p-contact{
@@ -300,6 +336,27 @@ textarea {
   .navLinks {
     width: 60%;
   }
+  #h2-apropos {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .divp{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+  }
+  .imgp{
+    text-align: center;
+  
+  }
+  .pp{
+    margin-top:10px;
+    
+    text-align: left;
+  }
 }
 @media screen and (max-width:800px) {
   #h1-projets {
@@ -356,7 +413,24 @@ textarea {
  
   #h2-apropos {
     font-size: 2em;
-    margin-top:20px;
+    margin-top: 50px;
+
+  }
+  .divp{
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+  }
+  .imgp{
+    height: 200px;
+    width: 400px;
+    margin:10px
+  
+  }
+  .pp{
+    margin-top:10px;
+    
+    text-align: left;
   }
 
   #p-apropos {
@@ -368,9 +442,6 @@ textarea {
     weight: 100px;
   }
  
-  #h2-apropos {
-    margin-top:4px;
-  }
 
   input,
   textarea {
