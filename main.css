@@ -189,6 +189,7 @@ nav a {
   display: flex;
   justify-content: center;
   height:100vh;
+  
 }
 .card-image{
   
@@ -367,6 +368,13 @@ textarea {
     flex-direction: column;
     padding: 20px;
     align-items: center;
+    margin-top:160px;
+  }
+  #section2{
+    margin-top: 400px;
+  }
+  .cards{
+    height: 350px;
   }
   .navLinks {
     background: #202024;
@@ -416,6 +424,11 @@ textarea {
     margin-top: 50px;
 
   }
+  #h1-contact {
+    
+    padding-top: 0px;
+   
+}
   .divp{
     display:flex;
     flex-direction: column;
@@ -482,6 +495,12 @@ textarea {
     font-size: 1.4em;
     height: 50px;
     width: 50px;
+  }
+  .cards{
+    height:300px;
+  }
+  #contact{
+    margin-top:250px;
   }
   #h1-contact{
     font-size: 1.5em;  
