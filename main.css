@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Oxygen+Mono");
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -166,21 +168,49 @@ nav a {
   height: 100vh;
   color: white;
 }
+.cards{
+  background-color: white;
+  width: 270px;
+  height:400px;
+  margin:10px;
+  border-radius:15px ;
+  overflow: hidden;
+  color:black;
+  text-align: center;
+}
 #h1-projets {
   font-size: 2em;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 20px;
 }
 #p-projets {
   padding: 10px;
   text-align: center;
 }
-#section1 {
-  padding: 40px;
+#section1 {  
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  height:100vh;
+  margin-top:60px;
+  
 }
-.img1 {
+.card-image{
+  
+  height:300px;
+  margin-bottom:15px ;
+  border-radius: 15px 15px 0 0;
+  /* background-size: cover; */
+}
+.card1{
+  background-image: url("images/2022-06-15 (1).png");
+}
+.card2{
+  background-image: url("images/screencapture-localhost-jihanReprise-2022-05-19-12_08_18 (1) (1).png");
+}
+.card3{
+  background-image: url("images/screencapture-file-C-Users-ghami-OneDrive-Bureau-formulaire-ecf-index-html-2022-05-19-12_34_06 (1).png");
+}
+/* .img1 {
   margin: auto;
   border: 3px solid #336696;
   padding: 20px;
@@ -189,36 +219,46 @@ nav a {
 img {
   height: 370px;
   weight: 180px;
-}
-.div2-ptojets {
-}
-.div3-ptojets {
-}
-.div4-ptojets {
-}
-.div5-ptojets {
-}
-.div6-ptojets {
-}
+} */
+
 /*--------apropos--------*/
 #section2{
   text-align: center;
+  height: 100vh;;
 }
 #h2-apropos {
   font-size: 2em;
   text-align: center;
   padding-top: 100px;
+  padding-bottom: 40px;
+}
+.divp{
+  display: flex;
+  justify-content: space-around;
+  margin:20px;
+}
+.imgp{
+  height: 300px;
+  width: 600px;
+  margin:20px
+  
+
+}
+.pp{
+  margin-top:40px;
+  
+  text-align: left;
 }
 #p-apropos{
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 .button {
   border: none;
   font-size: 1.1rem;
   padding: 10px;
   background-color: #336696;
-  margin: 20px;
+  margin: 10px;
   cursor: pointer;
   width: auto;
 }
@@ -237,7 +277,7 @@ img {
  
   font-size: 2em;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 200px;
   margin-bottom: 75px;
 }
 #p-contact{
@@ -300,6 +340,27 @@ textarea {
   .navLinks {
     width: 60%;
   }
+  #h2-apropos {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .divp{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+  }
+  .imgp{
+    text-align: center;
+  
+  }
+  .pp{
+    margin-top:10px;
+    
+    text-align: left;
+  }
 }
 @media screen and (max-width:800px) {
   #h1-projets {
@@ -310,6 +371,13 @@ textarea {
     flex-direction: column;
     padding: 20px;
     align-items: center;
+    margin-top:160px;
+  }
+  #section2{
+    margin-top: 400px;
+  }
+  .cards{
+    height: 350px;
   }
   .navLinks {
     background: #202024;
@@ -356,7 +424,28 @@ textarea {
  
   #h2-apropos {
     font-size: 2em;
-    margin-top:20px;
+    margin-top: 50px;
+
+  }
+  #h1-contact {
+   
+   
+}
+  .divp{
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+  }
+  .imgp{
+    height: 200px;
+    width: 400px;
+    margin:10px
+  
+  }
+  .pp{
+    margin-top:10px;
+    
+    text-align: left;
   }
 
   #p-apropos {
@@ -368,9 +457,6 @@ textarea {
     weight: 100px;
   }
  
-  #h2-apropos {
-    margin-top:4px;
-  }
 
   input,
   textarea {
@@ -384,6 +470,14 @@ textarea {
   #p-contact {
     font-size: 1.5rem;
   }
+}
+@media screen and (max-width:500px){
+ #contact{
+  margin-top: 100px;
+ } 
+ #section2{
+  margin-top: 450px;
+ }
 }
 @media screen and (max-width: 400px) {
   
@@ -412,6 +506,12 @@ textarea {
     height: 50px;
     width: 50px;
   }
+  .cards{
+    height:300px;
+  }
+  #contact{
+    margin-top:250px;
+  }
   #h1-contact{
     font-size: 1.5em;  
   }
@@ -434,6 +534,9 @@ textarea {
   }
 .emailSpan{
   font-size: 0.8em ;
+}
+.pp{
+  text-align: center;
 }
 
 }
